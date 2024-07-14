@@ -1,1 +1,62 @@
+#'Day 2: 30 Days of python programming'
+
+first_name= "Ahmed"
+last_name= 'Ali'
+full_name= 'Ahmed ali'
+country= "Egypt"
+city= 'Tanta'
+age= '30'
+year= '2020'
+married= True
+fullname, country, city, age, year= 'ali elsayed','Italia','Rome','2024',True
+
+
+print(fullname, country, city, age, year)
+print(len(first_name))
+print(len(last_name))
+
+****************************************************************************************************************************************************
+
+num_one= 5
+num_two= 4
+
+total= num_one + num_two
+diff= num_one - num_two
+product = num_one * num_two
+division = num_one / num_two
+reminder = num_one % num_two
+exp = num_one ** num_two
+floordivision = num_one // num_two
+
+
+
+print(total)
+print(diff)
+print(product)
+print(division)
+print(reminder)
+print(exp)
+print(floordivision)
+
+****************************************************************************************************************************************************
+
+# Import the 'pi' constant from the 'math' module to calculate the area of a circle
+from math import pi
+
+# Prompt the user to input the radius of the circle
+r = float(input("Input the radius of the circle : "))
+
+# Calculate the area of the circle using the formula: area = π * r^2
+area_of_circle = pi * r ** 2
+
+# Display the result, including the radius and calculated area
+print("The area of the circle with radius " + str(r) + " is: " + str(area_of_circle))
+
+****************************************************************************************************************************************************
+
+#calculate the Circumference of Circle 
+circum_of_circle= 2 * pi * r
+
+# Display the result, including the radius and calculated area
+print("The Circumference of Circle with radius " + str(r) + " is: " + str(circum_of_circle))
 
