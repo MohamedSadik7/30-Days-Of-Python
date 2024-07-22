@@ -1,0 +1,129 @@
+
+###################################################################
+
+## Excersise 4
+
+###################################################################
+
+# (1)
+# Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+
+Full_name= "Thirty" + " "+ 'Days' + " "+ 'of'+ ' '+ "Python"
+print(Full_name)
+
+# (2)
+# Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+
+Fullname= 'Coding'+ ' '+ 'For'+ ' '+'All'
+print(Fullname)
+
+# (3) (4)
+# Declare a variable named company and assign it to an initial value "Coding For All".
+
+Company= Fullname
+print(Company)
+
+# (5)
+# Print the length of the company string using len() method and print().
+print(len(Company))
+
+# (6) (7)
+# Change all the characters to uppercase letters using upper() method.
+# Change all the characters to lowercase letters using lower() method.
+
+print(Company.upper())
+print(Company.lower())
+
+# (8)
+# Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+
+print(Company.capitalize())
+print(Company.title())
+print(Company.swapcase())
+
+# (9)
+# Cut(slice) out the first word of Coding For All string.
+
+print(Company[0:6])
+print(Company[7:])
+
+# (10)
+
+print(Company.find("coding"))
+
+# (11)
+# Replace the word coding in the string 'Coding For All' to Python.
+
+company= print(Company.title())
+company="Coding For All"
+print(company.replace('Coding', 'Pyhton'))
+
+# (12)
+# Split the string 'Coding For All' using space as the separator (split()).
+
+print(company.split(" "))
+
+# (13)
+# "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+
+companies= ("Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon")
+print(companies.split(","))
+
+# (14)
+# What is the character at index 0 in the string Coding For All.
+# What is the last index of the string Coding For All.
+# What character is at index 10 in "Coding For All" string.
+
+print(company[0])
+print(company[-1])
+print(company[10])
+
+# (15)
+# Use index to determine the position of the first occurrence of C in Coding For All.
+# Use index to determine the position of the first occurrence of F in Coding For All.
+# Use rfind to determine the position of the last occurrence of l in Coding For All People.
+
+print(company.find('C'))
+print(company.find('F'))
+print(company.rfind('l'))
+
+# (16)
+# Use index or find to find the position of the first occurrence of the word Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+# Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+
+sentence= ('You cannot end a sentence with because because because is a conjunction')
+
+print(sentence.find("because"))
+print(sentence.rfind("because"))
+
+# (17)
+# Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+
+print(sentence[0:31])
+
+# (18)
+#'   Coding For All      '  , remove the left and right trailing spaces in the given string.
+
+spaces= '   Coding For All      ' 
+print(spaces.lstrip())
+print(spaces.rstrip())
+print(spaces.strip())
+
+# (19)
+# Which one of the following variables return True when we use the method isidentifier()
+
+challenge = '30DaysOfPython'
+print(challenge.isidentifier()) 
+challenge = 'thirty_days_of_python'
+print(challenge.isidentifier()) 
+
+# (20)
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+
+python_libraries=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(" # ".join(python_libraries))
+
+# (21)
+# Use the new line escape sequence to separate the following sentences.
+
+nescape= print('I am enjoying this challenge\nI just wonder what is next')
