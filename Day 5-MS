@@ -1,0 +1,140 @@
+# Methods of lists 
+
+# 1- Modifying Lists 
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits[0] = 'avocado'
+
+# 2- Checking Items in a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+
+# 3- Adding Items to a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.append('apple')
+
+# 4- Inserting Items into a List
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'apple')
+
+# 5- Removing Items from a List
+fruits = ['banana', 'orange', 'mango', 'lemon', 'banana']
+fruits.remove('banana')
+
+# 6- Removing Items Using Pop
+lst = ['item1', 'item2']
+lst.pop()       # last item
+lst.pop(index)
+
+# 7- Removing Items Using Del
+lst = ['item1', 'item2']
+del lst[index] # only a single item
+del lst        # to delete the list completely
+
+# 8- Clearing List Items
+lst = ['item1', 'item2']
+lst.clear()
+
+# 9- Copying a List
+lst = ['item1', 'item2']
+lst_copy = lst.copy(
+
+# 10- Joining Lists
+list3 = list1 + list2
+
+# 11- Joining using extend() method The extend() method allows to append list in a list.
+num1 = [0, 1, 2, 3]
+num2= [4, 5, 6]
+num1.extend(num2)
+
+# 12- Counting Items in a List
+lst = ['item1', 'item2']
+lst.count(item)
+
+# 13- Finding Index of an Item
+lst = ['item1', 'item2']
+lst.index(item)
+
+# 14- Reversing a List
+lst = ['item1', 'item2']
+lst.reverse()
+
+# 15- Sorting List Items
+lst = ['item1', 'item2']
+lst.sort()                # ascending
+lst.sort(reverse=True)    # descending
+
+####################################################
+
+# Exercises: Level 2: 05_Day_Lists
+
+####################################################
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# 1- Sort the list and find the min and max age
+
+age_sorted=sorted(ages)
+print(age_sorted)
+
+max_age= max(age_sorted)
+print(max_age)
+
+min_age= min(age_sorted)
+print(min_age)
+
+# 2- Add the min age and the max age again to the list
+
+age_sorted.extend([min_age,max_age])
+print(age_sorted)
+
+# 3- Find the median age (one middle item or two middle items divided by two)
+
+import statistics
+median_age= statistics.median(age_sorted)
+print(median_age)
+
+# 4-Find the average age (sum of all items divided by their number )
+
+mean_age= statistics.mean(age_sorted)
+print(mean_age)
+
+# 5- Find the range of the ages (max minus min)
+range_of_ages = max(age_sorted) - min(age_sorted)
+print("Range of the list of ages:", range_of_ages)
+
+# 6- Compare the value of (min - average) and (max - average), use abs() method
+
+min_diff= abs(min_age - mean_age)
+print(min_diff)
+
+max_diff= abs(max_age - mean_age)
+print(max_diff)
+
+# 7- Find the middle country(ies) in the countries list
+
+countries = ["USA", "Canada", "Germany", "Australia", "India", "Japan", "Brazil", "China", "South Korea", "UK"]
+
+countries_sorted = sorted(countries)
+
+n = len(countries_sorted)
+if n % 2 == 0:
+    middle_countries = countries_sorted[n//2 - 1:n//2 + 1]
+else:
+    middle_countries = [countries_sorted[n//2]]
+
+print("Middle country(ies):", middle_countries)
+
+# 8- Divide the countries list into two equal lists if it is even if not one more country for the first half.
+
+n=len(countries_sorted)
+if n % 2 == 0:
+    print(f"the first half of the countries list is {countries_sorted[0:n//2]}")
+    print(f"the seconed half of the countries list is {countries_sorted[n//2-1:-1]}")
+
+# 9- ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.
+
+scandic_countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+first_item,seconed_item,third_item,*rest= scandic_countries
+print(first_item)
+print(seconed_item)
+print(rest)
